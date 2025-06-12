@@ -1,4 +1,9 @@
 function calculateChaiIngredients(numberOfCups) {
+
+    if(!numberOfCups){
+        console.log('Input a number!')
+        return;
+    }
     // Recipe
     const water = 200; // ml
     const milk = 50; // ml

@@ -1,4 +1,8 @@
 function calculateBodaFare(distanceInKm){
+    if(!distanceInKm){
+        console.log('Input should be a number!')
+        return;
+    }
     // fare rules
     const baseFare = 50; // in Ksh
     const perKmCharges = 15; // in Ksh per km
