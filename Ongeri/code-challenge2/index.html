@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Guest List</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css"/>
+
 </head>
 <body>
-    <form id="guestForm">
- 
-        <label for="username">Guest Name:</label>
-        <input type="text" id="username" name="username" value="" required>
+
+    <div class="container">
+        <h2 class="heading-1">Welcome To My Graduation Event  <i class="fa-solid fa-graduation-cap"></i></h2>
+        <p>Add your name to the list and select rsvp</p>
+
+        <form id="guestForm">
     
-    <button type="submit" id="add-guest">Add Guest</button>
-    
-    </form>
-    <h2>Guest List</h2>
-    <ol id="guestList"></ol>
+            <label label ="username">Guest Name:</label>
+            <input type="text" id="username" name="username" value="" required>
+        
+        <button type="submit" id="add-guest">Add Guest</button>
+        
+        </form>
+        <div class="conatine-list">
+            <h2 class="heading-2">Guest List</h2>
+            <ol id="guestList"></ol>
+        </div>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>
